@@ -7,16 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CalculationModel.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    CalculationModel *model;
+}
 
 @property (nonatomic, strong) IBOutlet UILabel *resultScreen;
-@property (nonatomic, weak) NSString *arithmaticOperation; //don't really need this
-@property double lastInput;
-@property BOOL isArithmaticButtonPressed;
-@property double result;
-@property (nonatomic,strong) NSMutableArray* inputList;
-@property BOOL resetResultScreen;
 
 - (IBAction)numberButtonPressed:(id)sender;
 
