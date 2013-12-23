@@ -28,7 +28,7 @@
         self.resetResultScreen = false;
     }
     //Update the screen with numbers clicked
-    self.resultScreen = [NSString stringWithFormat:@"%@%i",self.resultScreen, [sender tag]];
+    self.resultScreen = [NSString stringWithFormat:@"%@%li",self.resultScreen, (long)[sender tag]];
 }
 
 //Called from ViewController when user clicks +, -, x, /
